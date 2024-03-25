@@ -26,6 +26,7 @@ class ViewController: UIViewController {
    
     @IBAction func addReminder(_ sender: Any) {
         print("addReminder clicked")
+        print("Eccomi")
     }
     
     @IBAction func editReminders(_ sender: Any) {

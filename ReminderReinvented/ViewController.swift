@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   
 //VARIABILI
     @IBOutlet weak var all: UILabel!
     @IBOutlet weak var followingDays: UILabel!
@@ -17,10 +18,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var reminderNumber: UILabel!
     @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var todayDate: UILabel!
+    @IBOutlet weak var cardOfTheDay: UIView!
+    @IBOutlet weak var outlineTodayDate: UIView!
+    @IBOutlet weak var backgroundPlusButton: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        self.cardOfTheDay.layer.cornerRadius = 20
+        self.outlineTodayDate.layer.cornerRadius = 20
+        self.backgroundPlusButton.layer.cornerRadius = 20
+        
+        
+        //
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.timeZone = .current
+        //formatter.dateStyle = .short
+        formatter.locale = .current
+        formatter.dateFormat = "MMMM d"
+        todayDate.text = formatter.string(from: date)
+        
+        
+        
     }
 
    

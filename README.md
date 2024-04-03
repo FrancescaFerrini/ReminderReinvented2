@@ -7,11 +7,17 @@
 <div style="display: flex;">
     <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/2bdb0425-2f72-49d1-b8e9-2e007446b354" width="300" />
     <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/6d8a6277-026a-40c2-bd0c-9b4568e5dc49" width="300" />
-    <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/275be554-ca6f-432f-9d02-422cd17a66d5" width="300" />
 </div>
 
+
 <div style="display: flex;">
-  <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/6c0fec3a-29e4-46e3-a21c-acd3bbd30fda" width="300" />
+    <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/275be554-ca6f-432f-9d02-422cd17a66d5" width="300" />
+    <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/6c0fec3a-29e4-46e3-a21c-acd3bbd30fda" width="300" />
+
+</div>
+
+
+<div style="display: flex;">
   <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/b2bc5895-fbdb-44f6-b380-978fecac6745" width="300" />
   <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/7b879bd3-2505-4e62-b5b6-4f82c8275eb4" width="300" />
 </div>

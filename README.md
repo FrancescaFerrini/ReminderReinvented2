@@ -25,7 +25,7 @@
 
 # RReminder!
 
-ReminderReinvented is a state-of-the-art iOS reminder management application designed with the goal of
+ReinventedReminder is a state-of-the-art iOS reminder management application designed with the goal of
 simplifying and streamlining the management of daily tasks. With its intuitive interface and advanced features,
 ReminderReinvented aims to become your reliable companion in planning and organizing tasks.
 

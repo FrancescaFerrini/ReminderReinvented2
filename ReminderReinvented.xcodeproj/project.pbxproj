@@ -28,6 +28,7 @@
 		270055B02BB079FF001E9D6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		275E574B2BB2062E001CAD0E /* NewReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReminder.swift; sourceTree = "<group>"; };
 		278E12382BB6DA67004BA3DE /* TodayReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayReminder.swift; sourceTree = "<group>"; };
+		27FD010C2BBD50CA009DF7DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 				270055A62BB079FE001E9D6E /* ViewController.swift */,
 				275E574B2BB2062E001CAD0E /* NewReminder.swift */,
 				278E12382BB6DA67004BA3DE /* TodayReminder.swift */,
+				27FD010C2BBD50CA009DF7DB /* README.md */,
 				270055A82BB079FE001E9D6E /* Main.storyboard */,
 				270055AB2BB079FF001E9D6E /* Assets.xcassets */,
 				270055AD2BB079FF001E9D6E /* LaunchScreen.storyboard */,

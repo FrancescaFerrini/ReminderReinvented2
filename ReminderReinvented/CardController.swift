@@ -1,13 +1,14 @@
 //
-//  DetailView.swift
+//  CardController.swift
 //  ReminderReinvented
 //
-//  Created by Francesca Ferrini on 25/03/24.
+//  Created by Francesca Ferrini on 26/03/24.
 //
 
 import UIKit
 
-class DetailView: UIViewController {
+
+class CardController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

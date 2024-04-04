@@ -136,6 +136,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 return false
             }
             return Calendar.current.isDate(reminderDate, inSameDayAs: currentDate)
+            
         }
         
         
@@ -220,10 +221,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 ///Loads saved reminders from UserDefaults and updates the tables
     func loadReminders() {
         if let savedReminders = UserDefaults.standard.array(forKey: "reminders") as? [[String: String]] {
-            reminders = savedReminders
-            tableView1.reloadData()
-            tableView2.reloadData()
-        }
+               reminders = savedReminders
+               
+               tableView1.reloadData()
+               tableView2.reloadData()
+               updateFollowingDaysLabelVisibility()
+               updateExpiredLabelVisibility()
+           } else {
+               // Se non ci sono promemoria presenti, nascondi entrambe le label
+               expiredLabel.isHidden = true
+               followingDays.isHidden = true
+           }
     }
     
 ///this function handles the deletion of a reminder from the table, array, and persistent storage when the user performs the delete action on a row in the table.
@@ -246,6 +254,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
             tableView1.reloadData()
             tableView2.reloadData()
+            updateFollowingDaysLabelVisibility()
+            updateExpiredLabelVisibility()
         }
     }
     
@@ -336,15 +346,40 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         print("editReminders clicked")
     }
     
-    func emptyReminders(){
-        if UserDefaults.standard.object(forKey: "reminders") == nil {
-            followingDays.isHidden = true
-            expiredLabel.isHidden = true
-        } else {
-            followingDays.isHidden = false
-            expiredLabel.isHidden = false
+    func updateFollowingDaysLabelVisibility() {
+        let currentDate = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        
+        let followingDayReminders = reminders.filter { reminder in
+            guard let dateString = reminder["date"],
+                  let reminderDate = dateFormatter.date(from: dateString) else {
+                return false
+            }
+            return reminderDate > Calendar.current.startOfDay(for: currentDate)
         }
+        
+        // If there are reminders with the date after today, show the label
+        followingDays.isHidden = followingDayReminders.isEmpty
     }
+
+    func updateExpiredLabelVisibility() {
+        let currentDate = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        
+        let expiredReminders = reminders.filter { reminder in
+            guard let dateString = reminder["date"],
+                  let reminderDate = dateFormatter.date(from: dateString) else {
+                return false
+            }
+            return reminderDate < Calendar.current.startOfDay(for: currentDate)
+        }
+        
+        // If there are reminders that have expired since today, show the label
+        expiredLabel.isHidden = expiredReminders.isEmpty
+    }
+   
 }
 
 

@@ -1,33 +1,29 @@
 
 
 
-
-
-
-<div style="display: flex;">
-    <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/2bdb0425-2f72-49d1-b8e9-2e007446b354" width="300" />
-    <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/6d8a6277-026a-40c2-bd0c-9b4568e5dc49" width="300" />
-</div>
-
-
-<div style="display: flex;">
-    <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/275be554-ca6f-432f-9d02-422cd17a66d5" width="300" />
-    <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/6c0fec3a-29e4-46e3-a21c-acd3bbd30fda" width="300" />
-
-</div>
-
-
-<div style="display: flex;">
-  <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/b2bc5895-fbdb-44f6-b380-978fecac6745" width="300" />
-  <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/7b879bd3-2505-4e62-b5b6-4f82c8275eb4" width="300" />
-</div>
-
-
 # RReminder!
 
 ReinventedReminder is a state-of-the-art iOS reminder management application designed with the goal of
 simplifying and streamlining the management of daily tasks. With its intuitive interface and advanced features,
 ReminderReinvented aims to become your reliable companion in planning and organizing tasks.
+
+
+<div style="display: flex;">
+     <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/35a35345-e1d8-47ae-9173-253f2f5b4f15" width="300" />
+     <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/745eaa83-e052-4b2f-9827-2ed526260fa2" width="300" />
+</div>
+
+
+<div style="display: flex;">
+    <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/e6119f33-a179-48e5-86d1-59be97fad842" width="300" />
+    <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/dd4b3e5d-fa86-4007-809a-76c9e17a7c82" width="300" />
+</div>
+
+
+<div style="display: flex;">
+    <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/db50a368-46e8-46bc-aca6-44a59cebf0d5" width="300" />
+    <img src="https://github.com/FrancescaFerrini/ReminderReinvented2/assets/75753679/ffff8df0-7161-4280-a197-4b7bd2a47357" width="300" />
+</div>
 
 
 # Files
@@ -42,7 +38,6 @@ ReminderReinvented aims to become your reliable companion in planning and organi
 - Adding, editing and deleting reminders
 - Filtering of reminders by date
 - Intuitive and customized user interface
-
 
 
 # Technologies used
